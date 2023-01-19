@@ -19,15 +19,15 @@ public class Spawner : MonoBehaviour
 
     void Update()
     {
-        /*if (maxEnemies <= enemiesSpawned)
+        if (maxEnemies <= enemiesSpawned)
         {
             stop = true;
-            }
+        }
         else
         {
             stop = false;
-        }*/
-        
+        }
+
         spawnWait = Random.Range(spawnLeasWait, spawnMostWait);
 
     }
@@ -44,6 +44,7 @@ public class Spawner : MonoBehaviour
         
         while (!stop)
         {
+            enemiesSpawned++;
             randEnemy = Random.Range(0 , 2);
             Vector3 spawnPositon = new Vector3 (Random.Range(-spawnValues.x, spawnValues.x), 1, Random.Range(-spawnValues.z, spawnValues.z)); //maybe
             Instantiate(enemie[randEnemy], spawnPositon + transform.position, gameObject.transform.rotation);//maybe

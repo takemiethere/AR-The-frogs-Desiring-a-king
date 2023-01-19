@@ -244,7 +244,7 @@ MonoBehaviour:
   spawnLeasWait: 0.5
   startWait: 1
   enemiesSpawned: 0
-  maxEnemies: 20
+  maxEnemies: 5
   stop: 0
 --- !u!4 &699211016
 Transform:
