@@ -13,10 +13,12 @@ GameObject:
   - component: {fileID: 2397057456415838040}
   - component: {fileID: 5063669813261100725}
   - component: {fileID: 2397057456415837978}
+  - component: {fileID: 3135073135355480597}
+  - component: {fileID: 2005783858383653452}
   - component: {fileID: 3991183960574182585}
   m_Layer: 0
   m_Name: Frog
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +104,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d373e088c9869d4cac5e2876bde77b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3135073135355480597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2397057456415837979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 664082ad633e2aa4085185e6ba094d39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 104829970813648393, guid: d3015b7eea383f64d8b81f965cc466e7, type: 3}
+  destroySound1: {fileID: 8300000, guid: 6b0ff72fe36160744b7b7ea2de35cad3, type: 3}
+  destroySound2: {fileID: 8300000, guid: 8b973a05bba69d041955e7a007ff0645, type: 3}
+--- !u!114 &2005783858383653452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2397057456415837979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dca641726f606b41834287b4662a24f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  scoreText: {fileID: 0}
 --- !u!136 &3991183960574182585
 CapsuleCollider:
   m_ObjectHideFlags: 0
