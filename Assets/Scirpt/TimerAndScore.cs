@@ -7,6 +7,7 @@ public class TimerAndScore : MonoBehaviour
     public Text timerText;
     public int score = 0;
     public Text scoreText;
+    private bool timeUp = false;
 
     void Update()
     {
@@ -15,38 +16,35 @@ public class TimerAndScore : MonoBehaviour
 
         if (timeLeft < 0)
         {
-            Time.timeScale = 0;
-            timerText.text = "Time's up!";
+            timeUp = true;
+            TimeUp();
         }
-
-
-        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+        if (!timeUp)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
+            if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
             {
-                if (hit.transform.CompareTag("Enemy"))
-                {
-                    Destroy(hit.transform.gameObject);
-                    score++;
-                    scoreText.text = score + "frogs was ate.";
+                Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
+                RaycastHit hit;
 
-                    Debug.Log("You ate: " + score + "Frogs");
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit.transform.CompareTag("Enemy"))
+                    {
+                        Destroy(hit.transform.gameObject);
+                        score++;
+                        scoreText.text = score + " frogs was ate.";
+
+                        Debug.Log("You ate: " + score + "Frogs");
+                    }
                 }
             }
         }
-
     }
-
-    /*void OnCollisionEnter(Collision collision)
+    void TimeUp()
     {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            Destroy(collision.gameObject);
-            score++;
-            scoreText.text = "Score: " + score;
-        }
-    }*/
+        Time.timeScale = 0;
+        timerText.text = "Time's up!";
+        // disable player's input script
+        this.enabled = false;
+    }
 }
