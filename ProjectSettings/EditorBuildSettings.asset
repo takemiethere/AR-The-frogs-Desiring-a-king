@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/arGAME.unity
+    guid: 61792b24871b23c4bb4146f2f3d4ed99
+  - enabled: 1
+    path: Assets/Scenes/CamVu.unity
+    guid: 4ce6df8e3bede4cc19b3c9af7330492b
   m_configObjects: {}
