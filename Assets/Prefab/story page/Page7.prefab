@@ -275,6 +275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: island
       objectReference: {fileID: 0}
+    - target: {fileID: 3737366306387435970, guid: 5f42233e113a58b4884407f57c459791, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f42233e113a58b4884407f57c459791, type: 3}
 --- !u!4 &5138102456364291307 stripped
