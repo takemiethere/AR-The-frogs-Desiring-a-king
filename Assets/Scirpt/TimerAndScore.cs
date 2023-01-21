@@ -31,9 +31,9 @@ public class TimerAndScore : MonoBehaviour
                 {
                     Destroy(hit.transform.gameObject);
                     score++;
-                    scoreText.text = "Score: " + score;
+                    scoreText.text = score + "frogs was ate.";
 
-                    Debug.Log("Score: " + score);
+                    Debug.Log("You ate: " + score + "Frogs");
                 }
             }
         }
