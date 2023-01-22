@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17967156, g: 0.22496763, b: 0.30650866, a: 1}
+  m_IndirectSpecularColor: {r: 0.17967118, g: 0.2249671, b: 0.30650726, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -591,8 +591,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemie:
-  - {fileID: 2397057456415837979, guid: f3094852a8d3c414f8fb979c9e72d568, type: 3}
-  - {fileID: 2397057456415837979, guid: cebcc3847596bfc47af93668cca5e53f, type: 3}
+  - {fileID: 1833430165130904860, guid: 6b6268197e4bb401a8536f07e6b10a8a, type: 3}
+  - {fileID: 1833430165130904860, guid: 39baacce57c414a00a4e889773e88016, type: 3}
   spawnValues: {x: 5, y: 1, z: 5}
   center: {x: 0, y: 0, z: 0}
   size: {x: 0, y: 0, z: 0}
@@ -610,7 +610,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699211014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -5.5, y: -1.65, z: 5.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -618,7 +618,7 @@ Transform:
   - {fileID: 1170751308}
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &714741278
 GameObject:
   m_ObjectHideFlags: 0
