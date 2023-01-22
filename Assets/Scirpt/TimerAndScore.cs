@@ -21,6 +21,9 @@ public class TimerAndScore : MonoBehaviour
         }
         if (!timeUp)
         {
+            //Reset time
+            Time.timeScale = 1;
+            
             if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);

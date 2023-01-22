@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/arGAME.unity
     guid: 61792b24871b23c4bb4146f2f3d4ed99
+  - enabled: 0
+    path: Assets/Scenes/testAr2.unity
+    guid: 3bda69ce0a4df42db8b5f726071bf832
   m_configObjects: {}
