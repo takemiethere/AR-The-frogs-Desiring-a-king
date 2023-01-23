@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 166343614}
   - component: {fileID: 166343616}
   - component: {fileID: 166343615}
+  - component: {fileID: 166343617}
   m_Layer: 5
   m_Name: Ui-LookFor
   m_TagString: Untagged
@@ -362,6 +363,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166343613}
   m_CullTransparentMesh: 1
+--- !u!95 &166343617
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166343613}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e31f6215e00df49c393106f17c3e7b8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &173620046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,6 +2412,31 @@ NavMeshAgent:
   m_BaseOffset: 1.05
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!1 &1314977483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2303157971860991435, guid: d3384e0ee6551b24bb2fc1d200905263, type: 3}
+  m_PrefabInstance: {fileID: 1384606372815304950}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1314977485
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314977483}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7434fad5238af1c428c508bee3b42560, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1344527295
 GameObject:
   m_ObjectHideFlags: 0
