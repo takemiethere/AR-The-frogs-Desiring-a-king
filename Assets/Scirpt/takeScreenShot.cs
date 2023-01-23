@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.UI;
 
 public class takeScreenShot : MonoBehaviour
 {
-    [SerializeField] GameObject objGroupImageButton;
+    [SerializeField] Canvas uiCanvas;
+    [SerializeField] private GameObject uiFind;
 
 	public void screenshotToDevice()
 	{
@@ -35,7 +37,7 @@ public class takeScreenShot : MonoBehaviour
 		// To avoid memory leaks
 		Destroy(ss);
 
-		foreach (Transform child in objGroupImageButton.transform)
+		foreach (Transform child in uiCanvas.transform)
 		{
 			child.gameObject.SetActive(true);
 		}
@@ -46,7 +48,7 @@ public class takeScreenShot : MonoBehaviour
 	{
 		yield return new WaitForEndOfFrame();
 
-		foreach (Transform child in objGroupImageButton.transform)
+		foreach (Transform child in uiCanvas.transform)
 		{
 			child.gameObject.SetActive(false);
 		}
@@ -75,7 +77,7 @@ public class takeScreenShot : MonoBehaviour
 
 	void hideUI()
     {
-		foreach (Transform child in objGroupImageButton.transform)
+		foreach (Transform child in uiCanvas.transform)
 		{
 			child.gameObject.SetActive(false);
 		}
@@ -83,9 +85,10 @@ public class takeScreenShot : MonoBehaviour
 
 	void showUI()
     {
-		foreach (Transform child in objGroupImageButton.transform)
+		foreach (Transform child in uiCanvas.transform)
 		{
 			child.gameObject.SetActive(true);
 		}
+		uiFind.gameObject.SetActive(false);
 	}
 }
